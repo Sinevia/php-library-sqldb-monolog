@@ -1,0 +1,21 @@
+{
+    "name": "sinevia/php-library-sqldb-monolog",
+    "description": "PHP Library Monolog Handler for SqlDb",
+    "type": "library",
+    "keywords": ["monolog", "handler", "sqldb", "library", "php", "sinevia"],    
+    "homepage": "http://github.com/sinevia/php-library-sqldb-monolog",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Milan Lesichkov",
+            "email": "lesichkovm@gmail.com",
+            "homepage": "http://lesichkov.co.uk",
+            "role": "Lead Developer"
+        }
+    ],
+    "autoload": {
+        "files": [
+            "src/SqlDbHandler.php"
+        ]
+    }
+}
