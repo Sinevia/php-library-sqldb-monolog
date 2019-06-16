@@ -12,7 +12,7 @@ use Sinevia\SqlDb;
  * This class is a handler for Monolog, which can be used
  * to write records in a MySQL table
  */
-class SqlDbHandler extends AbstractProcessingHandler
+class SqlDbMonologHandler extends AbstractProcessingHandler
 {
 
     /**
@@ -98,7 +98,7 @@ class SqlDbHandler extends AbstractProcessingHandler
 
         $contentArray = [
             'Channel' => $record['channel'],
-            'Level' => $record['level'],
+            'Level' => $record['level_name'],
             'Message' => $record['message'],
             'Context' => json_encode($record['context']),
             'Time' => $record['datetime']->format('Y-m-d H:i:s'),
