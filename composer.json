@@ -17,5 +17,8 @@
         "files": [
             "src/SqlDbMonologHandler.php"
         ]
+    },
+    "require": {
+        "monolog/monolog": ">=1.24",
     }
 }
